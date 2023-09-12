@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
   </head>
   <body>
-    <h1 style="text-align: center">About Us</h1>
+    <header>
+      <div class="topnav">
+        <img src="ik.png" alt="" />
+        <p>TravelFly</p>
+        <a href="/" style="float: right">Home</a>
+        <a href="about" style="float: right">About</a>
+        <a href="contact" style="float: right">Contact</a>
+      </div>
+    </header>
+    <div class="center">
+      <h1>WELCOME TO MY ABOUT PAGE</h1>
+      <br /><br />
+    </div>
+    <style>
+      body {
+        background-color: grey;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      #banner {
+        background-image: url(15.jpg);
+        opacity: 0.9;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(93, 93, 101);
+        height: 80px;
+      }
+      .topnav img {
+        position: relative;
+        height: 50px;
+        cursor: pointer;
+        color: gray;
+        left: 20px;
+        top: 40px;
+      }
+      .topnav p {
+        position: relative;
+        color: rgb(209, 209, 219);
+        cursor: pointer;
+        left: 70px;
+        top: 12px;
+      }
+      .topnav a {
+        float: center;
+        display: block;
+        color: #fff;
+        position: relative;
+        top: -19px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .topnav a:hover {
+        background-color: #dddddd;
+        color: black;
+      }
+      .center {
+        height: 400px;
+        width: 100%;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      h1 {
+        font-size: 90px;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
   </body>
 </html>
