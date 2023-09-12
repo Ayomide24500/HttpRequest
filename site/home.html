@@ -1,12 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travelling Website</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
-    <h1 style="text-align: center">Home page</h1>
+    <section id="banner">
+      <header>
+        <div class="topnav">
+          <img src="ik.png" alt="" />
+          <p>TravelFly</p>
+          <a href="#" style="float: right">Explore</a>
+          <a href="about" style="float: right">About</a>
+          <a href="contact" style="float: right">Contact</a>
+        </div>
+      </header>
+      <div class="banner-text">
+        <h1>WELCOME TO TRAVEL FLY</h1>
+        <p>Travel At Your Own Choice And Good Services Given</p>
+      </div>
+      <div class="banner-btn">
+        <p>Find great places to stay,food,shop,& visit from local export</p>
+      </div>
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="What" id="messages-search" />
+      </div>
+      <div class="search-bar1">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Where" id="messages-search" />
+      </div>
+      <div class="banner-btn">
+        <a href="#testimonial"><span></span>Read More</a>
+      </div>
+      <main>
+        <div class="about">
+          <center><h3 class="sub-heading">Browser The Highlight</h3></center>
+          <div class="side">
+            <a href="#"><span>Logo</span></a>
+            <a href="#"><span>Medical</span></a>
+            <a href="#"><span>Services</span></a>
+            <a href="#"><span>Jobs</span></a>
+            <a href="#"><span>Shopping</span></a>
+          </div>
+        </div>
+        <div class="services">
+          <h2>Our Services</h2>
+          <ul>
+            <li>Crypto Wallets</li>
+            <li>Crypto Trading</li>
+            <li>Crypto Mining</li>
+          </ul>
+        </div>
+        <section id="team" hidden>
+          <h2>Our Team</h2>
+          <ul>
+            <li>John Smith - CEO</li>
+            <li>Jane Doe - Creative Director</li>
+            <li>Mark Johnson - Senior Developer</li>
+          </ul>
+        </section>
+        <section id="contact" hidden>
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer hidden>
+        <p>Copyright &copy; 2022</p>
+      </footer>
+    </section>
+    <style>
+      :root {
+        --color-white: hsl(252, 30%, 100%);
+
+        --border-radius: 2rem;
+        --card-border-radius: 1rem;
+        --btn-padding: 0.6rem 2rem;
+        --search-padding: 0.6rem 1rem;
+        --card-padding: 1rem;
+      }
+      body {
+        background-color: grey;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      #banner {
+        background-image: url(15.jpg);
+        opacity: 0.9;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(93, 93, 101);
+        height: 80px;
+      }
+      .topnav img {
+        position: relative;
+        height: 50px;
+        cursor: pointer;
+        color: gray;
+        left: 20px;
+        top: 40px;
+      }
+      .topnav p {
+        position: relative;
+        color: rgb(209, 209, 219);
+        cursor: pointer;
+        left: 70px;
+        top: 12px;
+      }
+      .topnav a {
+        float: center;
+        display: block;
+        color: #fff;
+        position: relative;
+        top: -19px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .topnav a:hover {
+        background-color: #dddddd;
+        color: black;
+      }
+
+      main section {
+        padding: 2rem;
+      }
+
+      main section h2 {
+        margin-bottom: 1rem;
+      }
+      .banner-text {
+        color: #fff;
+        padding-top: 180px;
+      }
+      .banner-text h1 {
+        font-size: 50px;
+        text-align: center;
+        font-family: "Algerian";
+      }
+      .banner-text p {
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+      }
+      .banner-btn {
+        margin: 70px auto 0;
+        text-align: center;
+        position: relative;
+        color: #fff;
+        top: -40px;
+      }
+      .banner-btn a {
+        width: 150px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 0 10px;
+        padding: 12px 0;
+        color: #fff;
+        border: 0.5px solid #fff;
+        position: relative;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+      .banner-btn a span {
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: -1;
+        transition: 0.5s;
+      }
+      .banner-btn a:hover span {
+        width: 100%;
+      }
+      .banner-btn a:hover {
+        color: #000;
+      }
+      footer {
+        background-color: #f2f2f2;
+        padding: 1rem;
+        text-align: center;
+      }
+      .search-bar {
+        background: rgb(238, 238, 240);
+        width: 400px;
+        position: relative;
+        left: 300px;
+        border-radius: var(--border-radius);
+        padding: var(--search-padding);
+      }
+      .search-bar input[type="search"]::placeholder {
+        color: rgb(11, 11, 11);
+      }
+      .search-bar input {
+        border: none;
+        outline: none;
+      }
+      .search-bar input[type="search"] {
+        background: transparent;
+        width: 23vw;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        color: #000;
+      }
+
+      .search-bar1 {
+        background: rgb(238, 238, 240);
+        width: 400px;
+        position: relative;
+        left: 800px;
+        top: -35px;
+        border-radius: var(--border-radius);
+        padding: var(--search-padding);
+      }
+      .search-bar1 input[type="search"]::placeholder {
+        color: rgb(11, 11, 11);
+      }
+      .search-bar1 input {
+        border: none;
+        outline: none;
+      }
+      .search-bar1 input[type="search"] {
+        background: transparent;
+        width: 23vw;
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        color: #000;
+      }
+
+      .banner-btn {
+        margin: 70px auto 0;
+      }
+      .banner-btn a {
+        width: 150px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        border-radius: 30px;
+        padding: 12px 0;
+        color: #fff;
+        border: 0.5px solid #fff;
+        position: relative;
+        z-index: 1;
+        transition: color 0.5s;
+      }
+      .banner-btn a span {
+        width: 0;
+        height: 100%;
+        position: absolute;
+        border-radius: 30px;
+        top: 0;
+        left: 0;
+        background: #fff;
+        z-index: -1;
+        transition: 0.5s;
+      }
+      .banner-btn a:hover span {
+        width: 100%;
+      }
+      .banner-btn a:hover {
+        color: #000;
+      }
+      .sub-heading {
+        text-align: center;
+        color: #dddddd;
+        font-size: 2.5rem;
+        padding: 0.5rem 2rem;
+        font-weight: 300;
+        margin-bottom: 4rem;
+        background: var(--black);
+        display: inline-block;
+      }
+      .services h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: #dddddd;
+        text-align: center;
+      }
+      .side {
+        position: relative;
+        top: -60px;
+        text-align: center;
+        color: #dddddd;
+      }
+      .side a {
+        float: center;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        padding: 16px 24px;
+        text-decoration: none;
+      }
+    </style>
   </body>
 </html>
